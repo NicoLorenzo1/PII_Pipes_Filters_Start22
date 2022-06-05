@@ -21,6 +21,7 @@ namespace CompAndDel
 
             PipeNull pipeNull = new PipeNull();
 
+            //Filtro para guardar en cualquiera de sus pasos intermedios
             IFilter filterSave = new FilterSave();
             IPipe pipeserial3 = new PipeSerial(filterSave, pipeNull);
 
